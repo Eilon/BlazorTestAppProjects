@@ -22,13 +22,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="System.ComponentModel" />
-    <Reference Include="System.Net.Http.Json" />
-    <Reference Include="Microsoft.AspNetCore.Components.WebAssembly" />
-    <Reference Include="Microsoft.AspNetCore.Components.Authorization" />
-    <Reference Include="Microsoft.AspNetCore.SignalR.Client" />
-    <Reference Include="Microsoft.Extensions.Logging.Configuration" />
-    <Reference Include="Newtonsoft.Json" />
+    <PackageReference Include="System.ComponentModel" />
+    <PackageReference Include="System.Net.Http.Json" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 
   <ItemGroup>

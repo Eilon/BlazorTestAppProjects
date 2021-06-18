@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <EnableTypeScriptNuGetTarget>true</EnableTypeScriptNuGetTarget>
+    <DefaultNetCoreTargetFramework>net6.0</DefaultNetCoreTargetFramework>
+  </PropertyGroup>
+</Project>
