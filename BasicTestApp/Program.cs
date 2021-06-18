@@ -23,8 +23,6 @@ namespace BasicTestApp
     {
         public static async Task Main(string[] args)
         {
-            await SimulateErrorsIfNeededForTest();
-
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<Index>("root");
 
@@ -73,23 +71,6 @@ namespace BasicTestApp
             // Use CultureInfo.DefaultThreadCurrentCulture instead to modify the application's default scope.
             CultureInfo.DefaultThreadCurrentCulture = culture;
             CultureInfo.DefaultThreadCurrentUICulture = culture;
-        }
-
-        // Supports E2E tests in StartupErrorNotificationTest
-        private static async Task SimulateErrorsIfNeededForTest()
-        {
-            var currentUrl = DefaultWebAssemblyJSRuntime.Instance.Invoke<string>("getCurrentUrl");
-            if (currentUrl.Contains("error=sync"))
-            {
-                throw new InvalidTimeZoneException("This is a synchronous startup exception");
-            }
-
-            await Task.Yield();
-
-            if (currentUrl.Contains("error=async"))
-            {
-                throw new InvalidTimeZoneException("This is an asynchronous startup exception");
-            }
         }
     }
 }
