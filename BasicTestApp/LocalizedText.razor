@@ -5,7 +5,7 @@
 {
     string GetResourceString(string resourceName)
     {
-        using var resourceStream = typeof(LocalizedText).Assembly.GetManifestResourceStream("LocalizedText");
+        using var resourceStream = typeof(LocalizedText).Assembly.GetManifestResourceStream("BasicTestApp.Resources.resources");
         var resources = new System.Resources.ResourceSet(resourceStream);
         return resources.GetString(resourceName);
     }
