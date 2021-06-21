@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
-    <AspNetCorePackageVersion>6.0.0-preview.6.21316.9</AspNetCorePackageVersion>
-    <ExtensionsPackageVersion>6.0.0-preview.6.21317.4</ExtensionsPackageVersion>
+    <AspNetCorePackageVersion>6.0.0-preview.5.21301.17</AspNetCorePackageVersion>
+    <ExtensionsPackageVersion>6.0.0-preview.5.21301.5</ExtensionsPackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Update="System.ComponentModel" Version="4.3.0" />
