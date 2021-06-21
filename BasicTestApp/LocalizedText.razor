@@ -1,2 +1,12 @@
 ﻿<h3 id="culture-name-display">Culture is: @System.Globalization.CultureInfo.CurrentCulture.Name</h3>
-<p id="message-display">@Resources.Message</p>
+<p id="message-display">@GetResourceString("Message")</p>
+
+@code
+{
+    string GetResourceString(string resourceName)
+    {
+        using var resourceStream = typeof(LocalizedText).Assembly.GetManifestResourceStream("LocalizedText");
+        var resources = new System.Resources.ResourceSet(resourceStream);
+        return resources.GetString(resourceName);
+    }
+}

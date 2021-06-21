@@ -3,8 +3,6 @@
 
 using System;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Components.WebAssembly.Services;
 using Microsoft.JSInterop;
 
 namespace BasicTestApp
